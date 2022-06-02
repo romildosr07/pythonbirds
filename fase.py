@@ -8,7 +8,7 @@ DERROTA = 'DERROTA'
 EM_ANDAMENTO = 'EM_ANDAMENTO'
 
 
-class Ponto():
+class Ponto:
     def __init__(self, x, y, caracter):
         self.caracter = caracter
         self.x = round(x)
@@ -43,7 +43,7 @@ class Fase():
 
         :param obstaculos:
         """
-        pass
+        self._obstaculos.extend(obstaculos)
 
     def adicionar_porco(self, *porcos):
         """
@@ -51,7 +51,7 @@ class Fase():
 
         :param porcos:
         """
-        pass
+        self._porcos.extend(porcos)
 
     def adicionar_passaro(self, *passaros):
         """
@@ -59,7 +59,7 @@ class Fase():
 
         :param passaros:
         """
-        pass
+        self._passaros.extend(passaros)
 
     def status(self):
         """
